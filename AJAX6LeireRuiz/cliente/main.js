@@ -8,7 +8,9 @@ window.onload = function () {
         console.log(provincias);
 
         let inprimatu = document.getElementById("probintzi");
-        console.log("probintzi kode:"+ inprimatu);
+        console.log("probintzi kode:"+ inprimatu);  
+
+       /* let contenedor = document.getElementById("listaProvincias");*/
 
         for (let i = 0; i < provincias.length; i++) {
           let codigo = provincias[i].getElementsByTagName("codigo")[0].textContent;
@@ -18,7 +20,16 @@ window.onload = function () {
           option.value = codigo;
           option.textContent = codigo + " - " + nombre;
 
+           
           inprimatu.appendChild(option);
+
+
+          /* // Creamos un elemento para mostrar cada provincia
+           let item = document.createElement("p");
+           item.textContent = nombre;
+ 
+           // Agregamos el elemento al contenedor
+           contenedor.appendChild(item);*/
         }
       } 
     };
@@ -32,7 +43,7 @@ window.onload = function () {
 };
 
 
-document.getElementById("probintzi").addEventListener("change", function () {
+/*document.getElementById("probintzi").addEventListener("change", function () {
   kargatuHerriak(this.value);
 });
 
@@ -71,4 +82,4 @@ function kargatuHerriak(id) {
   http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   http.send("provincia="+id);
 }
-
+*/
