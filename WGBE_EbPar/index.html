@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WGBE1EbAzPar - Izen Abizena</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    
+    <h1>Galdetegia</h1>
+
+    <h2>Izenburua:  
+        <input type="text" id="galdetegi-izenburua" name="galdetegi-izenburua" maxlength="80" required>
+    </h2>
+    <span class="error hidden" id="title-error">Izenburuak 5 eta 80 letra artean izan behar ditu.</span>
+
+    <!--Atal hontan gehitu behar da galderaren edukia JS bidez-->
+    <div id="galdera"> 
+
+    </div>
+    
+    <!--Galdera berri bat sortu-->
+    <button id="galdera-gehitu" onclick="sekzioaGehitu()">Galdera Berria Gehitu</button>
+
+    <!--Galdetegiaren lehioa itxi-->
+    <div>
+        <button id="itxi" onclick="window.close()">Itxi galdetegia</button>
+    </div>
+
+    <button onclick="mostrarDatos()">datuak erakutsi</button>
+    <script src="./script/scripts.js"></script>
+
+</body>
+
+</html>

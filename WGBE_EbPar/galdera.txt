@@ -1,0 +1,27 @@
+<div class="galdera-container" id="">
+    <h3></h3>
+    <div class="galdera">
+        <label>Galdera:</label>
+        <input type="text" id="">
+    </div>
+    <div class="galdera">
+        <label>Mota:</label>
+        <select id="" name="">
+            <option value="">Aukeratu mota</option>
+            <option value="0">Testua</option>
+            <option value="1">Erantzun posible bakarrekoa</option>
+            <option value="2">Erantzun posible anitzekoak</option>
+        </select>
+    </div>
+    <div class="galdera" id="">
+        <label>Erantzuna:</label>
+        <input type="text" id="" name="">
+    </div>
+    <div class="galdera" id="">
+        <label>Erantzunak:</label>
+        <div id=""></div>
+        <button type="button">Erantzun Berria Gehitu</button>
+    </div>
+    <button type="button">Galdera Gorde</button>
+    <button type="button">Galdera Ezabatu</button>
+</div>
