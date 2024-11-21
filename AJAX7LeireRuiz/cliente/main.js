@@ -31,7 +31,7 @@ window.onload = function () {
       }
     };
 
-    http.open("POST", "../server/src/cargaProvinciasJSON.php", true);
+    http.open("POST", "../server/cargaProvinciasJSON.php", true);
     http.setRequestHeader("Content-Type", "application/json");
     http.send();
   }
@@ -76,7 +76,7 @@ function kargatuHerriak(id) {
     }
   };
 
-  http.open("POST", "../server/src/cargaMunicipiosJSON.php", true);
+  http.open("POST", "../server/cargaMunicipiosJSON.php", true);
   http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   http.send("provincia=" + id);
 }
